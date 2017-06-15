@@ -20,7 +20,10 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-gem 'rails_12factor', group: :production
+group :production do
+  gem 'deis-rails'
+  gem 'rails_12factor'
+end
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
