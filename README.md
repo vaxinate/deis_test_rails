@@ -1,24 +1,21 @@
 # README
 
+This is just a dumb rails app that has a hello world rake task
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+## Installing Development dependencies
 
-* Ruby version
+run `brew bundle` from the project root
 
-* System dependencies
+## Deployment instructions
 
-* Configuration
+Note: make sure you've installed the development dependencies first
 
-* Database creation
+### Deploy to a new deis container
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. `deis create <app name>`
+2. `deis config:set DATABASE_URL=postgresql://YOUR_DB_URL_HERE`
+3. `deis config:set BUILDPACK_URL=https://github.com/heroku/heroku-buildpack-ruby`
+4. `deis config:set PORT=3000`
+5. `git push deis master`

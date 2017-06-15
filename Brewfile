@@ -1,0 +1,2 @@
+brew 'deis'
+cask 'postgres'
