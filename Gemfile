@@ -21,7 +21,7 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'therubyracer', platforms: :ruby
 
 group :production do
-  gem 'deis-rails'
+  # gem 'deis-rails'
   gem 'rails_12factor'
 end
 
