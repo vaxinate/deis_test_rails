@@ -19,3 +19,10 @@ Note: make sure you've installed the development dependencies first
 3. `deis config:set BUILDPACK_URL=https://github.com/heroku/heroku-buildpack-ruby`
 4. `deis config:set PORT=3000`
 5. `git push deis master`
+
+## Things that i did so that this would deploy to deis
+
+* followed https://devcenter.heroku.com/articles/getting-started-with-rails5
+* set the deis container config per Deployment Instructions above
+
+Note: rails_12factor is in the gemfile, but the heroku docs link above shows a way to go without
